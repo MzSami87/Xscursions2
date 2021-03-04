@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(images/maldives2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.75;
+  height: -webkit-fill-available;
+}
+
+@keyframes forwards {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#overlay {
+  position: fixed; 
+  display: flex; 
+  width: 100%;
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b8c6f3; 
+  opacity: 0.4;
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 65px;
+  color: #fbd9bb;
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px gray;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: "Big Shoulders Inline Text", cursive;
+  width: 25%;
+}
+
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  margin: 0 20% 0 20%;
+  text-shadow: 5px 5px 20px black;
+  text-transform: uppercase;
+}
+
+em:hover {
+  letter-spacing: .25em;
+  animation: ease-in-out 5s;
+}
+
+form {
+  font-family: "Carrois Gothic SC", sans-serif;
+  text-align: center;
+  color: snow;
+  width: 400px;
+}
+
+.glass {
+  text-shadow: 2px 2px 2px gray;
+  color:snow;
+  background-color: rgba(255, 255, 255, .40);  
+ border-radius: 10%;
+}
+
+.social_media {
+  backdrop-filter: 10px;
+}
+
+h1 {
+  font-family: "Carrois Gothic SC", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 10px 10px 10px black;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 15px;
+  text-transform: none;
+}
+
+label {
+  font-size: 30px;
+  font-family: "Carrois Gothic SC", sans-serif;
+  display: none;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Carrois Gothic SC", sans-serif;
+  color: black;
+}
+
+.subtext {
+  font-size: 12px;
+}
+
+input,
+select,
+#phone,
+#comment {
+  width: 70%;
+  height: 50%;
+  padding: 12px 20px;
+}
+
+.container {
+  float: right;
+  width: fit-content;
+  position: initial;
+  margin-top: 200px;
+  border-radius: 10%;
+  height: 500px;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+img {
+  margin: 0;
+  width: 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+  html {
+    background-position: center;
+    background-repeat: no-repeat;
+    height:850px;
+  }
+  #caption {
+    margin:50px;
+    text-align: center;
+  }
+  #text {
+    font-size: 30px;
+    text-align: center;
+    min-width: 300px;
+    display: contents;
+    color: snow;
+    margin:auto;
+  }
+  .container {
+    margin: auto;
+    text-shadow: 10px 10px 10px black;
+    float: none;
+    border-radius: 25%;
+  }
+  form {
+    width: 350px;
+  }
+  .glass {
+    text-shadow: 2px 2px 2px gray;
+    color:snow;
+    background-color: rgba(255, 255, 255, .25);  
+   border-radius: 10%;
+  }
+}
+@media screen and (max-width:768px) {
+  html {
+    height: 850px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1150px) {
+  html {
+    height:100%;
+  }
+  #caption {
+    margin:50px;
+    text-align: center;
+  }
+  #text {
+    font-size: 40px;
+    text-align: center;
+    min-width: 300px;
+    display: block;
+    color: snow;
+    margin-left: 175px;
+    margin-right: 200px;
+    margin-top: -250px;
+  }
+  .container {
+    margin-top: 450px;
+    text-shadow: 10px 10px 10px black;
+  }
+  .glass {
+    text-shadow: 2px 2px 2px gray;
+    color:snow;
+    background-color: rgba(255, 255, 255, .25);  
+   border-radius: 10%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1369px) {
+  html {
+    height:100%;
+  }
+  #caption {
+    margin:50px;
+    text-align: center;
+  }
+  #text {
+    font-size: 55px;
+    width: 50%;
+  }
+}
