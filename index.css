@@ -198,9 +198,9 @@ img {
   html {
     height: 850px;
   }
-  .glass {
+  /* .glass {
     margin-top:20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 601px) and (max-width: 1150px) {
@@ -231,7 +231,7 @@ img {
     color:snow;
     background-color: rgba(255, 255, 255, .25);  
    border-radius: 10%;
-   margin-top:-50px;
+   margin-top:100px;
   }
 }
 
