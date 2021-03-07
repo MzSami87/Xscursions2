@@ -3,13 +3,11 @@
 }
 
 html {
-  background: url(images/maldives2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(images/maldives2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   opacity: 0.75;
   height: -webkit-fill-available;
 }
@@ -162,16 +160,22 @@ img {
     height:850px;
   }
   #caption {
-    margin:50px;
+    /* margin:50px;
+    text-align: center; */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
   }
   #text {
     font-size: 30px;
     text-align: center;
     min-width: 300px;
     display: contents;
-    color: snow;
-    margin:auto;
+    /* color: snow; */
+    /* margin:auto; */
   }
   .container {
     margin: auto;
@@ -187,6 +191,7 @@ img {
     color:snow;
     background-color: rgba(255, 255, 255, .25);  
    border-radius: 10%;
+   margin-top:100px;
   }
 }
 @media screen and (max-width:768px) {
@@ -208,10 +213,11 @@ img {
     text-align: center;
     min-width: 300px;
     display: block;
-    color: snow;
+    /* color: snow; */
     margin-left: 175px;
     margin-right: 200px;
     margin-top: -250px;
+    text-shadow: 2px 2px 2px lightgray;
   }
   .container {
     margin-top: 450px;
@@ -222,6 +228,7 @@ img {
     color:snow;
     background-color: rgba(255, 255, 255, .25);  
    border-radius: 10%;
+   margin-top:-50px;
   }
 }
 
